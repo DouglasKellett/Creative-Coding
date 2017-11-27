@@ -16,12 +16,12 @@ function setup() {
 
 function draw() {
   background(255, 0, 0);
-  push()
   fill(random(255));
   //rotate(random(360));
   for (let x = 0; x < 1000; x++) {
-    pop
+    push()
     rect(random(width), random(height), random(100), random(100));
+    pop()
 
 }
 }
