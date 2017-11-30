@@ -1,14 +1,8 @@
-//https://github.com/stavrosdidakis/DAT-GAD-405_2017
-//https://p5js.org
-
-//DAT405 / GAD405
-//01_For-Loop
-
-//Define the variable for the size
+let r = 255; let g = 255; let b = 255;
 let size = 50;
 
 function setup() {
-  createCanvas(1200, 600);
+  createCanvas(800, 600);
   //noLoop();
   frameRate(24)
 
@@ -16,12 +10,16 @@ function setup() {
 
 function draw() {
   background(255, 0, 0);
-  fill(random(255));
-  //rotate(random(360));
-  for (let x = 0; x < 1000; x++) {
-    push()
-    rect(random(width), random(height), random(100), random(100));
-    pop()
 
-}
+  r = random(255);
+  g = random(255);
+  b = random(255);
+
+  fill(r, g, b);
+  for (let x = 0; x < 800; x++) {
+    push()
+    rect(random(x), random(x), random(size), random(size));
+    pop()
+  }
+
 }
