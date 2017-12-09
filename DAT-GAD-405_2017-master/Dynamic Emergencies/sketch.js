@@ -1,9 +1,11 @@
-
 function setup() {
   createCanvas(594, 841);
 }
+//draws the scene
 function draw() {
+  //background is black
   background(0);
+  //running at 24 frames per second
   frameRate(24);
 
 //outline of the rects randomly change color every time the frame is updated
