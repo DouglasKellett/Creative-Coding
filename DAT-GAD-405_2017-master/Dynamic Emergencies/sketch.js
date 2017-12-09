@@ -1,17 +1,29 @@
 
 function setup() {
   createCanvas(594, 841);
-  frameRate(10);
 }
 function draw() {
-  background(100);
+  background(0);
+  frameRate(24);
 
-  let x = random(400);
-  let y = random(400);
 
-  stroke(255);
-  line(x, x, x, y);
-
+  stroke(random(255), random(255), random(255));
+  fill(0);
+  for (let x = 300; x < 1000; x++) {
+    rect(mouseX - random(x), mouseY - random(x), mouseX - 300, mouseY - 420);
+  }
+  stroke(random(255), random(255), random(255))
+  for (let x = 300; x < 1000; x++) {
+    rect(mouseX + random(x), mouseY - random(x), mouseX - 300, mouseY - 420);
+  }
+  stroke(random(255), random(255), random(255))
+  for (let x = 300; x < 1000; x++) {
+    rect(mouseX - random(x), mouseY + random(x), mouseX - 300, mouseY - 420);
+  }
+  stroke(random(255), random(255), random(255))
+  for (let x = 300; x < 1000; x++) {
+    rect(mouseX + random(x), mouseY + random(x), mouseX - 300, mouseY - 420);
+  }
 
 
 }

@@ -25,9 +25,13 @@ function draw() {
   for (let y = 300; y < 900; y++) {
     line(random(y), random(y), mouseX, mouseY);
   }
+  stroke(0);
+  for (let y = 300; y < 900; y++) {
+    line(random(y), random(y), mouseX, mouseY);
+  }
   stroke(0)
   fill(0);
-  ellipse(mouseX, mouseY, size, size);
+  //ellipse(mouseX, mouseY, size, size);
 
 
 }
